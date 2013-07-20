@@ -17,7 +17,7 @@ CONTROLLERS
     Anything that controls data
 \*------------------------------------*/
 
-function gridCtrl() {
+function gridCtrl($scope) {
     $scope.grids = [
         {
             "id": 1,
