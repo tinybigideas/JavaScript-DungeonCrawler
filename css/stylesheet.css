@@ -1,0 +1,42 @@
+.container {
+	width:250px;
+	margin:50px;
+	border:1px solid black;
+	padding:10px;
+}
+
+.entity {
+	height: 100px;width: 100px;
+	margin:10px;
+	float:left;
+}
+
+.player {
+	background:blue;
+}
+.enemy {
+	background:red;	
+}
+
+
+#hi {
+	width:100%;
+}
+
+#p, #e {
+	width:auto;
+}
+
+.cell {
+	/*height: 200px;width: 200px;*/
+	border:1px solid black;
+}
+
+table {
+	height: 400px;width: 400px;
+	float:left;
+}
+
+.container {
+	float:right;
+}
