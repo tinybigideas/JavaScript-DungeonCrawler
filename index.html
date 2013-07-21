@@ -38,8 +38,8 @@
             </div>          
         </div> -->
         
-        <ul ng-controller="gridCtrl">
-            <li ng-repeat="grid in grids" class="cell" id="gid_{{$index}}"></li>
+        <ul ng-controller="gridCtrl" id="map">
+            <li ng-repeat="grid in grids" class="cell entrance{{grid.entrance}}" id="gid_{{grid.id}}">{{grid.id}}</li>
         </ul>
         
         <!-- Scripts -->

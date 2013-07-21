@@ -27,3 +27,8 @@ app.config(function($locationProvider) {
       // Configure existing providers
   	$locationProvider.hashPrefix('!');
 });
+
+// Global Varibles 
+
+var gridSize =  256;
+

@@ -1,14 +1,11 @@
 'use strict';
 
-
 /*------------------------------------*\
    CONTENTS
 \*------------------------------------*/
 /*
 
 CONTROLLERS
- - 
- 
 */
 
 
@@ -18,10 +15,16 @@ CONTROLLERS
 \*------------------------------------*/
 
 function gridCtrl($scope) {
-    $scope.grids = [
-        {
-            "id": 1,
-            "name": "grid"
-        }
-    ];
+    $scope.grids = [];
+    for( var i = 0; i < gridSize; i++) {
+    	$scope.grids.push({
+    		"id": i
+    	});
+    }
+    
+    $scope.grids[6].entrance = "true";
+
+    console.log($scope.grids[6]);
+
+    $("ul#map").css("width",gridSize * 2 + "px");
 }
