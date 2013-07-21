@@ -87,22 +87,22 @@ app.factory('$tile', function($player) {
                 pathDirection = Math.round(Math.random()*4) + 1;
                    
                 if ( pathDirection == 1) { //up
-                    if (pos >= cellSize){
-                        (pos == cellSize) ? ((pos = pos - cellSize) - cellSize) : (pos = pos - cellSize);
-                        $("#gid_" + pos).addClass("path").css('background-color', 'green');
+                    if (pos >= (cellSize * 2)) {
+                        pos = pos - cellSize;
+                        $("#gid_" + pos).addClass("path");
                         console.log("up" + pos);
                     } 
                 } 
                 else if ( pathDirection == 2 ) { // right
-                     if ((last - pos) >= cellSize){
+                     if (pos % cellSize) !== 0) {
                         (pos == cellSize) ? ((pos = pos + 1) + 1) : (pos = pos + 1);
-                        $("#gid_" + pos).addClass("path").css('background-color', 'blue');
+                        $("#gid_" + pos).addClass("path");
                     } 
                 } 
                 else if ( pathDirection == 3 ) { // down
-                    if ((pos % cellSize) !== 0){
+                    if ((last - pos) >= (cellSize * 2)){
                         (pos == cellSize) ? ((pos = pos + cellSize) + cellSize) : (pos = pos + cellSize);
-                        $("#gid_" + pos).addClass("path").css('background-color', 'grey');
+                        $("#gid_" + pos).addClass("path");
                     } 
                 } 
                 else if ( pathDirection == 4 ) { // left

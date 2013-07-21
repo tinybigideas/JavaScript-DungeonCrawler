@@ -41,11 +41,11 @@ ul#map {
 
 
 li.wall {
-	background: black;
+	background:url('../img/Dirt.png');
 }
 
 li.path {
-	background:yellow;
+	background:url('../img/Wall.png');
 }
 
 li.entrance {
