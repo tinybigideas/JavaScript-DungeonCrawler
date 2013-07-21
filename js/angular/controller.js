@@ -14,7 +14,7 @@ CONTROLLERS
     Anything that controls data
 \*------------------------------------*/
 
-function gridCtrl($scope) {
+function gridCtrl($scope, $keys) {
     $scope.grids = [];
     for( var i = 0; i < gridSize; i++) {
     	$scope.grids.push({
@@ -27,4 +27,11 @@ function gridCtrl($scope) {
     console.log($scope.grids[6]);
 
     $("ul#map").css("width",gridSize * 2 + "px");
+    
+    // once grid complete
+    if ($scope.$last) {
+            setTimeout(function () {
+                $keys.init();
+            }, 500);
+    }
 }
