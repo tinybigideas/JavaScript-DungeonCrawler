@@ -39,14 +39,14 @@
         </div> -->
         
         <ul ng-controller="gridCtrl" id="map">
-            <li ng-repeat="grid in grids" class="cell entrance{{grid.entrance}}" id="gid_{{grid.id}}">{{grid.id}}</li>
+            <li ng-repeat="grid in grids" class="cell wall" id="gid_{{grid.id}}"><!-- {{grid.id}} --></li>
         </ul>
         
         <!-- Scripts -->
 
             <!-- jQuery -->
-            <script type="text/javascript" src="js/jquery-keybinds-custom.js"></script>
             <script type="text/javascript" src="js/jquery/jquery-2.0.2.js"></script>
+            <script type="text/javascript" src="js/jquery-keybinds-custom.js"></script>
             <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
             <script src="js/angular/angular.min.js"></script>
             <script src="js/angular/app.js"></script>

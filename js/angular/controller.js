@@ -14,17 +14,22 @@ CONTROLLERS
     Anything that controls data
 \*------------------------------------*/
 
-function gridCtrl($scope) {
+function gridCtrl($scope, $keys, $player, $tile) {
     $scope.grids = [];
     for( var i = 0; i < gridSize; i++) {
     	$scope.grids.push({
     		"id": i
     	});
     }
-    
-    $scope.grids[6].entrance = "true";
 
-    console.log($scope.grids[6]);
+    $("ul#map").css("width",gridSize + "px");
 
-    $("ul#map").css("width",gridSize * 2 + "px");
+    // once grid complete
+    setTimeout(function () {
+        $tile.generate();
+        // $player.set(6);
+        $keys.init();
+    $("ul>li.cell").css({width: cellSize + "px", height : cellSize + "px"});
+
+    }, 500);
 }

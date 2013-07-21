@@ -30,5 +30,6 @@ app.config(function($locationProvider) {
 
 // Global Varibles 
 
-var gridSize =  256;
+var cellSize = 32;
+var gridSize =  cellSize * cellSize;
 

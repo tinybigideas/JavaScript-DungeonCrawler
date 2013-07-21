@@ -11,13 +11,6 @@
 	float:left;
 }
 
-.player {
-	background:blue;
-}
-.enemy {
-	background:red;	
-}
-
 ul#map {
 	list-style:none;
 	height: 100%;
@@ -43,3 +36,29 @@ ul#map {
 /*.entrancetrue {
 	background:brown;
 }*/
+
+
+
+
+li.wall {
+	background: black;
+}
+
+li.path {
+	background:yellow;
+}
+
+li.entrance {
+	background: brown;
+}
+
+li.exit {
+	background: red;
+}
+
+.player {
+	background:blue!important;
+}
+.enemy {
+	background:red;	
+}
