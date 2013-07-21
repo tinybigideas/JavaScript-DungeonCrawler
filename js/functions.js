@@ -1,27 +1,20 @@
-var cords = {
-	x : 1,
-	y : 1
-};
-
 $(document).keydown(function(e){
 	if (e.keyCode == 87){ // up = 87
-       cords.y -= 1;
+       startPos-= 16;
        console.log(cords);
     }
     if (e.keyCode == 83){ // down = 83
-      cords.y += 1;
+      startPos += 16;
       console.log(cords); 
     }
     if(e.keyCode == 68) { // right = 68
-       cords.x += 1;
+       startPos += 1;
        console.log(cords);
     }
     if (e.keyCode == 65){ // left = 65
-       cords.x -= 1;
+       startPos -= 1;
        console.log(cords);
     }
-    $('table td').css('background','white');
-	$('table #'+cords.y+cords.x).css('background','blue');
 });
 
 
@@ -52,14 +45,14 @@ enemy.name = 'enemy';
 enemy.Atk = 3;
 enemy.Def = 2;
 
-var hi = function() {
-  var healthLevelBar = document.getElementById('playerHealthLevel');
-  healthLevelBar.style.width = player.HP*10 + "%";
+// var hi = function() {
+//   var healthLevelBar = document.getElementById('playerHealthLevel');
+//   healthLevelBar.style.width = player.HP*10 + "%";
 
-  var healthLevelBar1 = document.getElementById('enemyHealthLevel');
-  healthLevelBar1.style.width = enemy.HP*10 + "%";
-}
-hi();
+//   var healthLevelBar1 = document.getElementById('enemyHealthLevel');
+//   healthLevelBar1.style.width = enemy.HP*10 + "%";
+// }
+// hi();
 
 // PLAYER CONTROLLS
 

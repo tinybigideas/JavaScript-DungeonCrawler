@@ -18,25 +18,28 @@
 	background:red;	
 }
 
-
-#hi {
-	width:100%;
+ul#map {
+	list-style:none;
+	height: 100%;
+	float: left;
+	margin: 0!important;padding: 0!important;
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
 }
-
-#p, #e {
-	width:auto;
-}
-
 .cell {
-	/*height: 200px;width: 200px;*/
-	border:1px solid black;
-}
-
-table {
-	height: 400px;width: 400px;
+	height: 32px;width: 32px;
 	float:left;
+	/*border:1px solid black;*/
+	/*background:blue;*/
+	margin: 0;padding: 0;
 }
 
-.container {
-	float:right;
-}
+
+/*.entrancetrue {
+	background:brown;
+}*/
