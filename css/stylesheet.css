@@ -41,11 +41,11 @@ ul#map {
 
 
 li.wall {
-	background:url('../img/Dirt.png');
+	background:url('../img/Wall.png');
 }
 
 li.path {
-	background:url('../img/Wall.png');
+	background:url('../img/Dirt.png');
 }
 
 li.entrance {
@@ -57,8 +57,13 @@ li.exit {
 }
 
 .player {
-	background:blue!important;
+	background-color:none;
+	background:url(../img/HeroCrusader.png)!important;
 }
 .enemy {
 	background:red;	
+}
+
+.innerWall {
+	background:black;
 }
