@@ -27,6 +27,9 @@ function gridCtrl($scope, $keys, $player, $tile) {
     // once grid complete
     setTimeout(function () {
         $tile.generate();
+        $tile.generate();
+        $tile.generate();
+        $tile.generate(true);
         // $player.set(6);
         $keys.init();
     $("ul>li.cell").css({width: cellSize + "px", height : cellSize + "px"});

@@ -1,0 +1,36 @@
+section.pane {
+	height: 500px;width: 300px;
+	margin: 20px;
+}
+
+nav {
+	height:20%;
+}
+
+div.content {
+	height:80%;
+}
+
+
+.green {background:green;}
+.blue {background:blue;}
+.red {background:red;}
+.grey {background:grey;}
+.yellow {background:yellow;}
+.orange {background:orange;}
+.black {background:black;}
+.white {background:white;}
+.purple {background:purple;}
+.brown {background:brown;}
+.pink {background:pink;}
+.height {height:100%;}
+
+.left {
+	float:left;
+	width: 40px;
+}
+
+.right {
+	float:left;
+	width: 40px;
+}

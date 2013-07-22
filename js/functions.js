@@ -1,3 +1,6 @@
+window.parent.document.body.style.zoom = 2;
+
+
 var playerName = "Player";
 
 
