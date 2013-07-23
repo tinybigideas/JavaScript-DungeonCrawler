@@ -1,7 +1,6 @@
 'use strict';
  
- 
-/*------------------------------------*\
+ /*------------------------------------*\
    CONTENTS
 \*------------------------------------*/
 /*
@@ -86,7 +85,7 @@ app.factory('$player', function() {
 app.factory('$tile', function($player) {
     return {
         generate : function(ent) {
-            var pathTotal = (cellSize * 0.2) * 200;
+            var pathTotal = (cellSize * 0.2) * 1000;
             var entrance = Math.round(Math.random() * cellSize);
             var pos = entrance;
             var last = parseInt($("li.cell:last-child").attr("id").split("gid_")[1]);
