@@ -42,10 +42,12 @@ ul#map {
 
 li.wall {
 	background:url('../img/Wall.png');
+	background-size:100%;
 }
 
 li.path {
 	background:url('../img/Dirt.png');
+	background-size:100%;
 }
 
 li.entrance {
